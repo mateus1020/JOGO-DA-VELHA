@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "margarine", "inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6ddaae 0%, #38389e 100%);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.box-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 150px); /*SEPARA EM 3 COLUNAS DE 150PX */
+  grid-template-rows: repeat(3, 150px);
+  gap: 5px; /* Espaço entre as células */
+}
+
+.celula {
+  width: 150px;
+  height: 150px;
+  background-color: white; /* Adicione uma cor de fundo para as células */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
+  cursor: pointer; /* Adiciona cursor pointer ao passar por cima */
+  color: #38389e; /* Cor para X e O */
+}
+
+.celula:hover {
+  transition: 0.3s;
+  background-color: #38389e;
+  outline: 3px inset yellow;
+}
+
+.box-2 {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  color: #38389e;
+}
+
+#cell-1 {
+  border-top: none;
+  border-left: none;
+}
+
+#cell-4,
+#cell-7 {
+  border-left: none;
+}
