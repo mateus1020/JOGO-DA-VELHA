@@ -24,6 +24,7 @@ header {
   grid-template-columns: repeat(3, 150px); /*SEPARA EM 3 COLUNAS DE 150PX */
   grid-template-rows: repeat(3, 150px);
   gap: 5px; /* Espaço entre as células */
+  cursor: pointer;
 }
 
 .celula {
