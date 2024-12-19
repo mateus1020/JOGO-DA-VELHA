@@ -50,7 +50,7 @@ h1 {
 
 .celula:hover {
   transition: 0.3s;
-  background-color: #38389e;
+  background-color: #acfadba4;
   outline: 3px inset yellow;
 }
 
