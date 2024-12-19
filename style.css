@@ -14,9 +14,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 header {
   margin-bottom: 50px;
   text-align: center;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 3px #38389e;
 }
 
 .box-1 {
@@ -38,6 +44,8 @@ header {
   font-size: 2rem; /* Ajuste o tamanho da fonte conforme necessário */
   cursor: pointer; /* Adiciona cursor pointer ao passar por cima */
   color: #38389e; /* Cor para X e O */
+  font-size: 72px;
+  font-family: 'rock salt';
 }
 
 .celula:hover {
@@ -47,13 +55,27 @@ header {
 }
 
 .box-2 {
-  display: none;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   text-align: center;
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 20px;
-  border-radius: 10px;
   color: #38389e;
+}
+
+button {
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 0px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: linear-gradient(235deg, #199664 0%, #01019c 100%);
+  cursor: pointer;
+  font-size: 24px;
+  text-shadow: 2px 2px 3px #6ddaae;
 }
 
 #cell-1 {
@@ -64,4 +86,8 @@ header {
 #cell-4,
 #cell-7 {
   border-left: none;
+}
+
+#result-message {
+  font-size: 32px;
 }
